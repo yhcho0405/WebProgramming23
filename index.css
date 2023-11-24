@@ -1,0 +1,74 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;   
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    position: fixed; /* 고정 위치로 설정 */
+    width: 100%; /* 가로 폭 100% */
+    top: 0; /* 위에서 0px 떨어진 위치에 고정 */
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+section:hover {
+    background-color: #ddd; /* 호버 시 배경 색 변경 */
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #eee;
+}
+
+table {
+    width: 100%;
+    max-width: 700px;
+    height: 100%;
+    margin: 20px;
+}
+
+/* 배경 색상을 지정합니다 */
+.korean { background-color: #ffcccb; }
+.chinese { background-color: #ffb6c1; }
+.western { background-color: #ffb347; }
+.japanese { background-color: #ffdead; }
+.snack { background-color: #ffe4b5; }
