@@ -1,4 +1,17 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // 여기에 원하는 JavaScript 코드를 작성합니다.
     console.log('JavaScript 파일이 로딩되었습니다.');
 });
+
+function searchRestaurant() {
+    var searchInput = document.getElementById('searchInput').value.toLowerCase();
+    var sections = document.querySelectorAll('section');
+
+    sections.forEach(function (section) {
+        var restaurantType = section.className.toLowerCase();
+        if (restaurantType.includes(searchInput)) {
+            section.style.display = 'block';
+        } else {
+            section.style.display = 'none';
+        }
+    });
+}

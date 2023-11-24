@@ -58,12 +58,36 @@ li {
 li:hover {
     background-color: #eee;
 }
+.search-box {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-button {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: url('search-icon.png') no-repeat center center; /* 돋보기 이미지 설정 */
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+}
 
 table {
     width: 100%;
     max-width: 700px;
     height: 100%;
     margin: 20px;
+    margin-top: 80px;
 }
 
 /* 배경 색상을 지정합니다 */
@@ -72,3 +96,4 @@ table {
 .western { background-color: #ffb347; }
 .japanese { background-color: #ffdead; }
 .snack { background-color: #ffe4b5; }
+.beer { background-color:aquamarine;}
