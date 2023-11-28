@@ -5,9 +5,11 @@
 }
 
 .food-image {
-    width: 150px;
-    height: auto;
+    width: 225px;
+    height: 200px;
     margin-right: 20px;
+    border-radius:20%;
+    border:5px solid black;
 }
 
 .restaurant-info {
