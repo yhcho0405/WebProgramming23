@@ -173,3 +173,32 @@ body {
 .youtube {
     text-align: center;
 }
+.contents {
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.contact-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.contact-card h2 {
+    margin-top: 0;
+}
+
+.contact-card p {
+    color: #333;
+    line-height: 1.5;
+}
