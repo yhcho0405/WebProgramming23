@@ -44,7 +44,7 @@ body {
 /* hero header */
 .hero-header{
     height: 450px;
-    background-image: url("../homepageimg/title.png");
+    background-image: url("../images/homepage_img/title.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
