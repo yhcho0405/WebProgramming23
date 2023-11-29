@@ -48,7 +48,3 @@ body{
     background-repeat: no-repeat;
     background-size: contain;
 }
-#login-form input[type="checkbox"]:checked + label{
-    background-repeat: no-repeat;
-    background-size: contain;
-}
