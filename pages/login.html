@@ -30,18 +30,25 @@
         <a href="beer.html"><li>술집</li></a>
       </ul>
     </nav>
+
+
     <div class="login-wrapper">
       <h2>Login</h2>
       <form method="post" id="login-form">
-          <input type="text" name="userName" placeholder="Email">
-          <input type="password" name="userPassword" placeholder="Password">
+          <input type="text" name="userName" id="username" placeholder="Email" required>
+          <input type="password" name="password" id="password" placeholder="Password" required>
           <label for="remember-check">
               <input type="checkbox" id="remember-check">아이디 저장하기
           </label>
-          <input type="submit" value="Login">
+          <button type="submit" class="loginbutton" onclick="login()">Login</button>
       </form>
   </div>
-  <hr>
+
+
+  <script src="../js/index.js"></script>
+
+
+  <hr class="disable">
     <div class="footer">
       <a href="http://facebook.com">
           <img src="../../images/homepage_img/facebook.png"height="20">
@@ -60,5 +67,5 @@
           </a>
     </a>
   </div>
-    </body>
+  </body>
 </html>
