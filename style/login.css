@@ -1,3 +1,6 @@
+*:not(.disable){
+    border: none;
+}
 
 body{
     font-size: 14px;
