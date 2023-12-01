@@ -1,822 +1,564 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <title>동네식당 맛집 추천</title>
-    <link rel="stylesheet" href="../style/style.css" />
-    <link rel="stylesheet" href="../style/list.css" />
-    <link rel="icon" type="images/png" href="../images/homepage_img/icon.png">
-    <script src="../js/random.js"></script>
-  </head>
-  <body>
-    <div class="navbar">
-      <a href="../index.html" id="logo">
-        <img src="../images/homepage_img/mini_title.png" width="65">
-        </a>
-        <ul id="menu">
-          <li><a href="contact.html">contact</a></li>
-          <li><a href="#" onclick="openRandomKakaoMapLink()">정해줘!</a></li>
-          <li><a href="login.html">login</a></li>
-        </ul>
-    </div>
-    <hr>
-    <nav class="menu">
-      <ul class="menu_name">
-        <a href="korean.html"><li>한식</li></a>
-        <a href="chinese.html"><li>중식</li></a>
-        <a href="western.html"><li>양식</li></a>
-        <a href="japanese.html"><li>일식</li></a>
-        <a href="snack.html"><li>분식</li></a>
-        <a href="beer.html"><li>술집</li></a>
-      </ul>
-    </nav>
-
-    <div class="restaurant-container">
-      <img
-        src="../images/korean_images/원조이모네연탄불곱창.png"
-        alt="Food Image"
-        class="food-image"
-      />
-      <div class="restaurant-info">
-        <a href="https://place.map.kakao.com/21412672?openhour=1"
-          ><h2>원조이모네연탄불곱창</h2></a
-        >
-        <p>곱창,막창</p>
-        <div class="rating-and-reviews">
-          <span class="rating">2.6 ★★★☆☆</span>
-          <a href="https://place.map.kakao.com/21412672#review" target="_blank"
-            >리뷰 보기</a
-          >
+    <head>
+        <meta charset="UTF-8" />
+        <title>동네식당 맛집 추천</title>
+        <link rel="stylesheet" href="../style/style.css" />
+        <link rel="stylesheet" href="../style/list.css" />
+        <link rel="icon" type="images/png" href="../images/homepage_img/icon.png" />
+        <script src="../js/random.js"></script>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="../index.html" id="logo">
+                <img src="../images/homepage_img/mini_title.png" width="65" />
+            </a>
+            <ul id="menu">
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="#" onclick="openRandomKakaoMapLink()">정해줘!</a></li>
+                <li><a href="login.html">login</a></li>
+            </ul>
         </div>
-        <p class="address">서울 노원구 동일로192길 46</p>
-        <p class="old-address">(지번) 공릉동 392-2</p>
-        <div class="operation-and-contact">
-          <span class="hours">영업시간: 영업시간 월~토 16:30 ~ 22:30</span>
+        <hr />
+        <nav class="menu">
+            <ul class="menu_name">
+                <a href="korean.html"><li>한식</li></a>
+                <a href="chinese.html"><li>중식</li></a>
+                <a href="western.html"><li>양식</li></a>
+                <a href="japanese.html"><li>일식</li></a>
+                <a href="snack.html"><li>분식</li></a>
+                <a href="beer.html"><li>술집</li></a>
+            </ul>
+        </nav>
+        <div class="restaurant-list">
+            <div class="restaurant-container">
+                <img src="../images/korean_images/원조이모네연탄불곱창.png" alt="Food Image" class="food-image" />
+                <div class="restaurant-info">
+                    <a href="https://place.map.kakao.com/21412672?openhour=1"><h2>원조이모네연탄불곱창</h2></a>
+                    <p>곱창,막창</p>
+                    <div class="rating-and-reviews">
+                        <span class="rating">2.6 ★★★☆☆</span>
+                        <a href="https://place.map.kakao.com/21412672#review" target="_blank">리뷰 보기</a>
+                    </div>
+                    <p class="address">서울 노원구 동일로192길 46</p>
+                    <p class="old-address">(지번) 공릉동 392-2</p>
+                    <div class="operation-and-contact">
+                        <span class="hours">영업시간: 영업시간 월~토 16:30 ~ 22:30</span>
+                    </div>
+                    <span class="phone-number">02-973-4658</span>
+                </div>
+            </div>
+            <div class="restaurant-container">
+                <img src="../images/korean_images/화로상회 공릉점.png" alt="Food Image" class="food-image" />
+                <div class="restaurant-info">
+                    <a href="https://place.map.kakao.com/1677550004?openhour=1"><h2>화로상회 공릉점</h2></a>
+                    <p>육류,고기</p>
+                    <div class="rating-and-reviews">
+                        <span class="rating">4.0 ★★★★☆</span>
+                        <a href="https://place.map.kakao.com/1677550004#review" target="_blank">리뷰 보기</a>
+                    </div>
+                    <p class="address">서울 노원구 공릉로46길 6 현대프라자 1층 111호</p>
+                    <p class="old-address">(지번) 공릉동 421-19</p>
+                    <div class="operation-and-contact">
+                        <span class="hours">영업시간: 매일 12:00 ~ 23:00</span>
+                    </div>
+                    <span class="phone-number">02-979-2292</span>
+                </div>
+            </div>
+            <div class="restaurant-container">
+                <img src="../images/korean_images/마포생고기.png" alt="Food Image" class="food-image" />
+                <div class="restaurant-info">
+                    <a href="https://place.map.kakao.com/12991364?openhour=1"><h2>마포생고기</h2></a>
+                    <p>육류,고기</p>
+                    <div class="rating-and-reviews">
+                        <span class="rating">3.6 ★★★★☆</span>
+                        <a href="https://place.map.kakao.com/12991364#review" target="_blank">리뷰 보기</a>
+                    </div>
+                    <p class="address">서울 노원구 동일로190길 39 1, 2층</p>
+                    <p class="old-address">(지번) 공릉동 393-5</p>
+                    <div class="operation-and-contact">
+                        <span class="hours">영업시간: 매일 00:00 ~ 24:00</span>
+                    </div>
+                    <span class="phone-number">02-979-6776</span>
+                </div>
+            </div>
+            <div class="restaurant-container">
+                <img src="../images/korean_images/청학골.png" alt="Food Image" class="food-image" />
+                <div class="restaurant-info">
+                    <a href="https://place.map.kakao.com/8580028?openhour=1"><h2>청학골</h2></a>
+                    <p>갈비</p>
+                    <div class="rating-and-reviews">
+                        <span class="rating">1.8 ★★☆☆☆</span>
+                        <a href="https://place.map.kakao.com/8580028#review" target="_blank">리뷰 보기</a>
+                    </div>
+                    <p class="address">서울 노원구 동일로192길 6</p>
+                    <p class="old-address">(지번) 공릉동 395-1</p>
+                    <div class="operation-and-contact">
+                        <span class="hours">영업시간: 매일 00:00 ~ 24:00</span>
+                    </div>
+                    <span class="phone-number">02-978-0055</span>
+                </div>
+            </div>
+            <div class="restaurant-container">
+                <img src="../images/korean_images/오름제주고기 본점.png" alt="Food Image" class="food-image" />
+                <div class="restaurant-info">
+                    <a href="https://place.map.kakao.com/903435269?openhour=1"><h2>오름제주고기 본점</h2></a>
+                    <p>육류,고기</p>
+                    <div class="rating-and-reviews">
+                        <span class="rating">2.2 ★★☆☆☆</span>
+                        <a href="https://place.map.kakao.com/903435269#review" target="_blank">리뷰 보기</a>
+                    </div>
+                    <p class="address">서울 노원구 동일로192길 85 1층</p>
+                    <p class="old-address">(지번) 공릉동 441-136</p>
+                    <div class="operation-and-contact">
+                        <span class="hours">영업시간: 매일 12:00 ~ 23:00</span>
+                    </div>
+                    <span class="phone-number">02-973-9290</span>
+                </div>
+            </div>
+            <div class="restaurant-container">
+                <img src="../images/korean_images/국민소곱창 공릉점.png" alt="Food Image" class="food-image" />
+                <div class="restaurant-info">
+                    <a href="https://place.map.kakao.com/2140415713?openhour=1"><h2>국민소곱창 공릉점</h2></a>
+                    <p>곱창,막창</p>
+                    <div class="rating-and-reviews">
+                        <span class="rating">4.4 ★★★★☆</span>
+                        <a href="https://place.map.kakao.com/2140415713#review" target="_blank">리뷰 보기</a>
+                    </div>
+                    <p class="address">서울 노원구 동일로192길 88 오성빌딩 1층</p>
+                    <p class="old-address">(지번) 공릉동 441-26</p>
+                    <div class="operation-and-contact">
+                        <span class="hours">영업시간: 영업시간 월,화 17:30 ~ 23:00</span>
+                    </div>
+                    <span class="phone-number">02-975-9923</span>
+                </div>
+            </div>
+            <div class="restaurant-container">
+                <img src="../images/korean_images/굴다리 전주콩나물국밥 본점.png" alt="Food Image" class="food-image" />
+                <div class="restaurant-info">
+                    <a href="https://place.map.kakao.com/17209056?openhour=1"><h2>굴다리 전주콩나물국밥 본점</h2></a>
+                    <p>국밥</p>
+                    <div class="rating-and-reviews">
+                        <span class="rating">4.2 ★★★★☆</span>
+                        <a href="https://place.map.kakao.com/17209056#review" target="_blank">리뷰 보기</a>
+                    </div>
+                    <p class="address">서울 노원구 동일로198길 32 1층</p>
+                    <p class="old-address">(지번) 공릉동 366-1</p>
+                    <div class="operation-and-contact">
+                        <span class="hours">영업시간: 매일 09:00 ~ 22:00</span>
+                    </div>
+                    <span class="phone-number">02-978-7202</span>
+                </div>
+            </div>
+            <div class="restaurant-container">
+                <img src="../images/korean_images/공릉회수산.png" alt="Food Image" class="food-image" />
+                <div class="restaurant-info">
+                    <a href="https://place.map.kakao.com/16906339?openhour=1"><h2>공릉회수산</h2></a>
+                    <p>회</p>
+                    <div class="rating-and-reviews">
+                        <span class="rating">3.6 ★★★★☆</span>
+                        <a href="https://place.map.kakao.com/16906339#review" target="_blank">리뷰 보기</a>
+                    </div>
+                    <p class="address">서울 노원구 공릉로 179 2층</p>
+                    <p class="old-address">(지번) 공릉동 408-8</p>
+                    <div class="operation-and-contact">
+                        <span class="hours">영업시간: 매일 12:00 ~ 24:00</span>
+                    </div>
+                    <span class="phone-number">02-971-4383</span>
+                </div>
+            </div>
+            <div class="restaurant-container">
+                <img src="../images/korean_images/춘천닭갈비 서울과기대점.png" alt="Food Image" class="food-image" />
+                <div class="restaurant-info">
+                    <a href="https://place.map.kakao.com/16936111?openhour=1"><h2>춘천닭갈비 서울과기대점</h2></a>
+                    <p>닭요리</p>
+                    <div class="rating-and-reviews">
+                        <span class="rating">4.8 ★★★★★</span>
+                        <a href="https://place.map.kakao.com/16936111#review" target="_blank">리뷰 보기</a>
+                    </div>
+                    <p class="address">서울 노원구 동일로192길 56</p>
+                    <p class="old-address">(지번) 공릉동 392-27</p>
+                    <div class="operation-and-contact">
+                        <span class="hours">영업시간: 매일 11:30 ~ 23:00</span>
+                    </div>
+                    <span class="phone-number">02-975-2345</span>
+                </div>
+            </div>
+            <div class="restaurant-container">
+                <img src="../images/korean_images/백세마인보쌈 공릉본점.png" alt="Food Image" class="food-image" />
+                <div class="restaurant-info">
+                    <a href="https://place.map.kakao.com/1315949532?openhour=1"><h2>백세마인보쌈 공릉본점</h2></a>
+                    <p>족발,보쌈</p>
+                    <div class="rating-and-reviews">
+                        <span class="rating">4.2 ★★★★☆</span>
+                        <a href="https://place.map.kakao.com/1315949532#review" target="_blank">리뷰 보기</a>
+                    </div>
+                    <p class="address">서울 노원구 공릉로 187</p>
+                    <p class="old-address">(지번) 공릉동 408-4</p>
+                    <div class="operation-and-contact">
+                        <span class="hours">영업시간: 매일 11:30 ~ 22:00</span>
+                    </div>
+                    <span class="phone-number">02-972-1656</span>
+                </div>
+            </div>
+            <div class="restaurant-container">
+                <img src="../images/korean_images/무봉리토종순대국 공릉점.png" alt="Food Image" class="food-image" />
+                <div class="restaurant-info">
+                    <a href="https://place.map.kakao.com/1741509421?openhour=1"><h2>무봉리토종순대국 공릉점</h2></a>
+                    <p>순대</p>
+                    <div class="rating-and-reviews">
+                        <span class="rating">3.3 ★★★☆☆</span>
+                        <a href="https://place.map.kakao.com/1741509421#review" target="_blank">리뷰 보기</a>
+                    </div>
+                    <p class="address">서울 노원구 동일로192길 63 1층</p>
+                    <p class="old-address">(지번) 공릉동 389-9</p>
+                    <div class="operation-and-contact">
+                        <span class="hours">영업시간: 매일 00:00 ~ 24:00</span>
+                    </div>
+                    <span class="phone-number">02-977-7396</span>
+                </div>
+            </div>
+            <div class="restaurant-container">
+                <img src="../images/korean_images/이정림수제햄부대찌개.png" alt="Food Image" class="food-image" />
+                <div class="restaurant-info">
+                    <a href="https://place.map.kakao.com/381875424?openhour=1"><h2>이정림수제햄부대찌개</h2></a>
+                    <p>찌개,전골</p>
+                    <div class="rating-and-reviews">
+                        <span class="rating">4.5 ★★★★★</span>
+                        <a href="https://place.map.kakao.com/381875424#review" target="_blank">리뷰 보기</a>
+                    </div>
+                    <p class="address">서울 노원구 공릉로 207 세림빌딩 2층 202호</p>
+                    <p class="old-address">(지번) 공릉동 441</p>
+                    <div class="operation-and-contact">
+                        <span class="hours">영업시간: 매일 11:00 ~ 22:00 · 휴게시간 매일 15:00 ~ 16:00</span>
+                    </div>
+                    <span class="phone-number">0507-1339-3804</span>
+                </div>
+            </div>
+            <div class="restaurant-container">
+                <img src="../images/korean_images/향토곱창.png" alt="Food Image" class="food-image" />
+                <div class="restaurant-info">
+                    <a href="https://place.map.kakao.com/16819810?openhour=1"><h2>향토곱창</h2></a>
+                    <p>곱창,막창</p>
+                    <div class="rating-and-reviews">
+                        <span class="rating">2.9 ★★★☆☆</span>
+                        <a href="https://place.map.kakao.com/16819810#review" target="_blank">리뷰 보기</a>
+                    </div>
+                    <p class="address">서울 노원구 동일로191길 10</p>
+                    <p class="old-address">(지번) 공릉동 383-18</p>
+                    <div class="operation-and-contact">
+                        <span class="hours">영업시간: 매일 11:00 ~ 24:00</span>
+                    </div>
+                    <span class="phone-number">02-972-3492</span>
+                </div>
+            </div>
+            <div class="restaurant-container">
+                <img src="../images/korean_images/청교옥.png" alt="Food Image" class="food-image" />
+                <div class="restaurant-info">
+                    <a href="https://place.map.kakao.com/88388237?openhour=1"><h2>청교옥</h2></a>
+                    <p>냉면</p>
+                    <div class="rating-and-reviews">
+                        <span class="rating">3.8 ★★★★☆</span>
+                        <a href="https://place.map.kakao.com/88388237#review" target="_blank">리뷰 보기</a>
+                    </div>
+                    <p class="address">서울 노원구 공릉로 225 나동 1층</p>
+                    <p class="old-address">(지번) 공릉동 438-2</p>
+                    <div class="operation-and-contact">
+                        <span class="hours">영업시간: 매일 09:30 ~ 21:30</span>
+                    </div>
+                    <span class="phone-number">02-949-1519</span>
+                </div>
+            </div>
+            <div class="restaurant-container">
+                <img src="../images/korean_images/원조강영숙봉평메밀촌 본점.png" alt="Food Image" class="food-image" />
+                <div class="restaurant-info">
+                    <a href="https://place.map.kakao.com/17223169?openhour=1"><h2>원조강영숙봉평메밀촌 본점</h2></a>
+                    <p>국수</p>
+                    <div class="rating-and-reviews">
+                        <span class="rating">4.3 ★★★★☆</span>
+                        <a href="https://place.map.kakao.com/17223169#review" target="_blank">리뷰 보기</a>
+                    </div>
+                    <p class="address">서울 노원구 공릉로 191-6 1층</p>
+                    <p class="old-address">(지번) 공릉동 441-40</p>
+                    <div class="operation-and-contact">
+                        <span class="hours">영업시간: 매일 10:30 ~ 21:30</span>
+                    </div>
+                    <span class="phone-number">02-971-6953</span>
+                </div>
+            </div>
+            <div class="restaurant-container">
+                <img src="../images/korean_images/전봇대연탄불막창구이.png" alt="Food Image" class="food-image" />
+                <div class="restaurant-info">
+                    <a href="https://place.map.kakao.com/23106158?openhour=1"><h2>전봇대연탄불막창구이</h2></a>
+                    <p>곱창,막창</p>
+                    <div class="rating-and-reviews">
+                        <span class="rating">3.4 ★★★☆☆</span>
+                        <a href="https://place.map.kakao.com/23106158#review" target="_blank">리뷰 보기</a>
+                    </div>
+                    <p class="address">서울 노원구 동일로192길 45 1층</p>
+                    <p class="old-address">(지번) 공릉1동 388-6</p>
+                    <div class="operation-and-contact">
+                        <span class="hours">영업시간: 영업시간 매일 16:30 ~ 01:00</span>
+                    </div>
+                    <span class="phone-number">02-949-7677</span>
+                </div>
+            </div>
+            <div class="restaurant-container">
+                <img src="../images/korean_images/찬이네곱창.png" alt="Food Image" class="food-image" />
+                <div class="restaurant-info">
+                    <a href="https://place.map.kakao.com/1064474316?openhour=1"><h2>찬이네곱창</h2></a>
+                    <p>곱창,막창</p>
+                    <div class="rating-and-reviews">
+                        <span class="rating">5.0 ★★★★★</span>
+                        <a href="https://place.map.kakao.com/1064474316#review" target="_blank">리뷰 보기</a>
+                    </div>
+                    <p class="address">서울 노원구 공릉로51길 7</p>
+                    <p class="old-address">(지번) 공릉동 440-11</p>
+                    <div class="operation-and-contact">
+                        <span class="hours">영업시간: 영업시간 월~토 18:00 ~ 23:00</span>
+                    </div>
+                    <span class="phone-number">02-974-3121</span>
+                </div>
+            </div>
+            <div class="restaurant-container">
+                <img src="../images/korean_images/수돈재 공릉점.png" alt="Food Image" class="food-image" />
+                <div class="restaurant-info">
+                    <a href="https://place.map.kakao.com/1472202260?openhour=1"><h2>수돈재 공릉점</h2></a>
+                    <p>육류,고기</p>
+                    <div class="rating-and-reviews">
+                        <span class="rating">3.3 ★★★☆☆</span>
+                        <a href="https://place.map.kakao.com/1472202260#review" target="_blank">리뷰 보기</a>
+                    </div>
+                    <p class="address">서울 노원구 동일로192길 5 1층</p>
+                    <p class="old-address">(지번) 공릉동 386-6</p>
+                    <div class="operation-and-contact">
+                        <span class="hours">영업시간: 매일 10:30 ~ 22:00</span>
+                    </div>
+                    <span class="phone-number">02-977-2016</span>
+                </div>
+            </div>
+            <div class="restaurant-container">
+                <img src="../images/korean_images/오늘손칼국수앤찜 공릉점.png" alt="Food Image" class="food-image" />
+                <div class="restaurant-info">
+                    <a href="https://place.map.kakao.com/26418668?openhour=1"><h2>오늘손칼국수앤찜 공릉점</h2></a>
+                    <p>해물,생선</p>
+                    <div class="rating-and-reviews">
+                        <span class="rating">3.9 ★★★★☆</span>
+                        <a href="https://place.map.kakao.com/26418668#review" target="_blank">리뷰 보기</a>
+                    </div>
+                    <p class="address">서울 노원구 동일로192길 5 2층</p>
+                    <p class="old-address">(지번) 공릉동 386-6</p>
+                    <div class="operation-and-contact">
+                        <span class="hours">영업시간: 매일 10:00 ~ 22:00</span>
+                    </div>
+                    <span class="phone-number">02-973-9252</span>
+                </div>
+            </div>
+            <div class="restaurant-container">
+                <img src="../images/korean_images/삼정종합어시장.png" alt="Food Image" class="food-image" />
+                <div class="restaurant-info">
+                    <a href="https://place.map.kakao.com/201802381?openhour=1"><h2>삼정종합어시장</h2></a>
+                    <p>회</p>
+                    <div class="rating-and-reviews">
+                        <span class="rating">4.3 ★★★★☆</span>
+                        <a href="https://place.map.kakao.com/201802381#review" target="_blank">리뷰 보기</a>
+                    </div>
+                    <p class="address">서울 노원구 동일로192길 47 2층</p>
+                    <p class="old-address">(지번) 공릉동 389-7</p>
+                    <div class="operation-and-contact">
+                        <span class="hours">영업시간: 매일 11:30 ~ 24:00</span>
+                    </div>
+                    <span class="phone-number">02-978-8945</span>
+                </div>
+            </div>
+            <div class="restaurant-container">
+                <img src="../images/korean_images/강나루유황오리주물럭 제1본점.png" alt="Food Image" class="food-image" />
+                <div class="restaurant-info">
+                    <a href="https://place.map.kakao.com/16061965?openhour=1"><h2>강나루유황오리주물럭 제1본점</h2></a>
+                    <p>오리</p>
+                    <div class="rating-and-reviews">
+                        <span class="rating">2.3 ★★☆☆☆</span>
+                        <a href="https://place.map.kakao.com/16061965#review" target="_blank">리뷰 보기</a>
+                    </div>
+                    <p class="address">서울 노원구 공릉로43길 11</p>
+                    <p class="old-address">(지번) 공릉동 408-138</p>
+                    <div class="operation-and-contact">
+                        <span class="hours">영업시간: 매일 11:00 ~ 22:00</span>
+                    </div>
+                    <span class="phone-number">02-972-5454</span>
+                </div>
+            </div>
+            <div class="restaurant-container">
+                <img src="../images/korean_images/김가네찜칼국수.png" alt="Food Image" class="food-image" />
+                <div class="restaurant-info">
+                    <a href="https://place.map.kakao.com/536237723?openhour=1"><h2>김가네찜칼국수</h2></a>
+                    <p>한식</p>
+                    <div class="rating-and-reviews">
+                        <span class="rating">4.7 ★★★★★</span>
+                        <a href="https://place.map.kakao.com/536237723#review" target="_blank">리뷰 보기</a>
+                    </div>
+                    <p class="address">서울 노원구 공릉로 181 1층</p>
+                    <p class="old-address">(지번) 공릉동 408-6</p>
+                    <div class="operation-and-contact">
+                        <span class="hours">영업시간: 매일 10:00 ~ 22:00</span>
+                    </div>
+                    <span class="phone-number">02-978-8880</span>
+                </div>
+            </div>
+            <div class="restaurant-container">
+                <img src="../images/korean_images/추운돼지삼겹살 공릉점.png" alt="Food Image" class="food-image" />
+                <div class="restaurant-info">
+                    <a href="https://place.map.kakao.com/1563510748?openhour=1"><h2>추운돼지삼겹살 공릉점</h2></a>
+                    <p>삼겹살</p>
+                    <div class="rating-and-reviews">
+                        <span class="rating">3.5 ★★★★☆</span>
+                        <a href="https://place.map.kakao.com/1563510748#review" target="_blank">리뷰 보기</a>
+                    </div>
+                    <p class="address">서울 노원구 동일로186길 77-21</p>
+                    <p class="old-address">(지번) 공릉동 504-20</p>
+                    <div class="operation-and-contact">
+                        <span class="hours">영업시간: 영업시간 매일 16:00 ~ 23:00</span>
+                    </div>
+                    <span class="phone-number">02-948-9111</span>
+                </div>
+            </div>
+            <div class="restaurant-container">
+                <img src="../images/korean_images/명문대.png" alt="Food Image" class="food-image" />
+                <div class="restaurant-info">
+                    <a href="https://place.map.kakao.com/724570590?openhour=1"><h2>명문대</h2></a>
+                    <p>해물,생선</p>
+                    <div class="rating-and-reviews">
+                        <span class="rating">4.3 ★★★★☆</span>
+                        <a href="https://place.map.kakao.com/724570590#review" target="_blank">리뷰 보기</a>
+                    </div>
+                    <p class="address">서울 노원구 동일로192다길 7</p>
+                    <p class="old-address">(지번) 공릉동 389-11</p>
+                    <div class="operation-and-contact">
+                        <span class="hours">영업시간: 월요일</span>
+                    </div>
+                    <span class="phone-number">02-949-2203</span>
+                </div>
+            </div>
+            <div class="restaurant-container">
+                <img src="../images/korean_images/압구정찌개마을 공릉본점.png" alt="Food Image" class="food-image" />
+                <div class="restaurant-info">
+                    <a href="https://place.map.kakao.com/20748457?openhour=1"><h2>압구정찌개마을 공릉본점</h2></a>
+                    <p>찌개,전골</p>
+                    <div class="rating-and-reviews">
+                        <span class="rating">3.2 ★★★☆☆</span>
+                        <a href="https://place.map.kakao.com/20748457#review" target="_blank">리뷰 보기</a>
+                    </div>
+                    <p class="address">서울 노원구 동일로191길 8</p>
+                    <p class="old-address">(지번) 공릉동 383-17</p>
+                    <div class="operation-and-contact">
+                        <span class="hours">영업시간: 매일 00:00 ~ 24:00</span>
+                    </div>
+                    <span class="phone-number">02-493-0097</span>
+                </div>
+            </div>
+            <div class="restaurant-container">
+                <img src="../images/korean_images/열화철판.png" alt="Food Image" class="food-image" />
+                <div class="restaurant-info">
+                    <a href="https://place.map.kakao.com/174772884?openhour=1"><h2>열화철판</h2></a>
+                    <p>곱창,막창</p>
+                    <div class="rating-and-reviews">
+                        <span class="rating">3.0 ★★★☆☆</span>
+                        <a href="https://place.map.kakao.com/174772884#review" target="_blank">리뷰 보기</a>
+                    </div>
+                    <p class="address">서울 노원구 동일로192길 90 2층</p>
+                    <p class="old-address">(지번) 공릉동 441-25</p>
+                    <div class="operation-and-contact">
+                        <span class="hours">영업시간: 매일 11:00 ~ 24:00 · 휴게시간 매일 15:00 ~ 17:00</span>
+                    </div>
+                    <span class="phone-number">02-6013-5892</span>
+                </div>
+            </div>
+            <div class="restaurant-container">
+                <img src="../images/korean_images/참맛감자탕.png" alt="Food Image" class="food-image" />
+                <div class="restaurant-info">
+                    <a href="https://place.map.kakao.com/773352732?openhour=1"><h2>참맛감자탕</h2></a>
+                    <p>감자탕</p>
+                    <div class="rating-and-reviews">
+                        <span class="rating">3.9 ★★★★☆</span>
+                        <a href="https://place.map.kakao.com/773352732#review" target="_blank">리뷰 보기</a>
+                    </div>
+                    <p class="address">서울 노원구 동일로192길 41 1층</p>
+                    <p class="old-address">(지번) 공릉동 388-5</p>
+                    <div class="operation-and-contact">
+                        <span class="hours">영업시간: 매일 00:00 ~ 24:00</span>
+                    </div>
+                    <span class="phone-number">02-974-5533</span>
+                </div>
+            </div>
+            <div class="restaurant-container">
+                <img src="../images/korean_images/웰빙왕십리곱창.png" alt="Food Image" class="food-image" />
+                <div class="restaurant-info">
+                    <a href="https://place.map.kakao.com/21331942?openhour=1"><h2>웰빙왕십리곱창</h2></a>
+                    <p>곱창,막창</p>
+                    <div class="rating-and-reviews">
+                        <span class="rating">3.4 ★★★☆☆</span>
+                        <a href="https://place.map.kakao.com/21331942#review" target="_blank">리뷰 보기</a>
+                    </div>
+                    <p class="address">서울 노원구 공릉로 208 1층</p>
+                    <p class="old-address">(지번) 공릉동 208-18</p>
+                    <div class="operation-and-contact">
+                        <span class="hours">영업시간: 매일 14:00 ~ 05:00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="restaurant-container">
+                <img src="../images/korean_images/싱싱오징어바다 과기대점.png" alt="Food Image" class="food-image" />
+                <div class="restaurant-info">
+                    <a href="https://place.map.kakao.com/16330146?openhour=1"><h2>싱싱오징어바다 과기대점</h2></a>
+                    <p>회</p>
+                    <div class="rating-and-reviews">
+                        <span class="rating">2.9 ★★★☆☆</span>
+                        <a href="https://place.map.kakao.com/16330146#review" target="_blank">리뷰 보기</a>
+                    </div>
+                    <p class="address">서울 노원구 동일로192길 30 1층</p>
+                    <p class="old-address">(지번) 공릉동 393-5</p>
+                    <div class="operation-and-contact">
+                        <span class="hours">영업시간: 영업시간 월~금 16:00 ~ 05:00</span>
+                    </div>
+                    <span class="phone-number">02-976-8081</span>
+                </div>
+            </div>
+            <div class="restaurant-container">
+                <img src="../images/korean_images/온고을 본점.png" alt="Food Image" class="food-image" />
+                <div class="restaurant-info">
+                    <a href="https://place.map.kakao.com/16472635?openhour=1"><h2>온고을 본점</h2></a>
+                    <p>닭요리</p>
+                    <div class="rating-and-reviews">
+                        <span class="rating">3.0 ★★★☆☆</span>
+                        <a href="https://place.map.kakao.com/16472635#review" target="_blank">리뷰 보기</a>
+                    </div>
+                    <p class="address">서울 노원구 동일로 1065</p>
+                    <p class="old-address">(지번) 공릉동 398-5</p>
+                    <div class="operation-and-contact">
+                        <span class="hours">영업시간: 매일 10:00 ~ 22:00</span>
+                    </div>
+                    <span class="phone-number">02-975-8200</span>
+                </div>
+            </div>
         </div>
-        <span class="phone-number">02-973-4658</span>
-      </div>
-    </div>
-    <div class="restaurant-container">
-      <img
-        src="../images/korean_images/화로상회 공릉점.png"
-        alt="Food Image"
-        class="food-image"
-      />
-      <div class="restaurant-info">
-        <a href="https://place.map.kakao.com/1677550004?openhour=1"
-          ><h2>화로상회 공릉점</h2></a
-        >
-        <p>육류,고기</p>
-        <div class="rating-and-reviews">
-          <span class="rating">4.0 ★★★★☆</span>
-          <a
-            href="https://place.map.kakao.com/1677550004#review"
-            target="_blank"
-            >리뷰 보기</a
-          >
+        <hr />
+        <div class="footer">
+            <a href="http://facebook.com">
+                <img src="../images/homepage_img/facebook.png" height="20" />
+            </a>
+            <a href="http://instagram.com">
+                <img src="../images/homepage_img/instagram.png" height="20" />
+            </a>
+            <a href="http://twitter.com">
+                <img src="../images/homepage_img/twitter.png" height="20" />
+            </a>
+            <a href="http://naver.com">
+                <img src="../images/homepage_img/naver.png" height="20" />
+            </a>
+            <a href="http://kakao.com">
+                <img src="../images/homepage_img/kakao.png" height="20" />
+            </a>
         </div>
-        <p class="address">서울 노원구 공릉로46길 6 현대프라자 1층 111호</p>
-        <p class="old-address">(지번) 공릉동 421-19</p>
-        <div class="operation-and-contact">
-          <span class="hours">영업시간: 매일 12:00 ~ 23:00</span>
-        </div>
-        <span class="phone-number">02-979-2292</span>
-      </div>
-    </div>
-    <div class="restaurant-container">
-      <img
-        src="../images/korean_images/마포생고기.png"
-        alt="Food Image"
-        class="food-image"
-      />
-      <div class="restaurant-info">
-        <a href="https://place.map.kakao.com/12991364?openhour=1"
-          ><h2>마포생고기</h2></a
-        >
-        <p>육류,고기</p>
-        <div class="rating-and-reviews">
-          <span class="rating">3.6 ★★★★☆</span>
-          <a href="https://place.map.kakao.com/12991364#review" target="_blank"
-            >리뷰 보기</a
-          >
-        </div>
-        <p class="address">서울 노원구 동일로190길 39 1, 2층</p>
-        <p class="old-address">(지번) 공릉동 393-5</p>
-        <div class="operation-and-contact">
-          <span class="hours">영업시간: 매일 00:00 ~ 24:00</span>
-        </div>
-        <span class="phone-number">02-979-6776</span>
-      </div>
-    </div>
-    <div class="restaurant-container">
-      <img
-        src="../images/korean_images/청학골.png"
-        alt="Food Image"
-        class="food-image"
-      />
-      <div class="restaurant-info">
-        <a href="https://place.map.kakao.com/8580028?openhour=1"
-          ><h2>청학골</h2></a
-        >
-        <p>갈비</p>
-        <div class="rating-and-reviews">
-          <span class="rating">1.8 ★★☆☆☆</span>
-          <a href="https://place.map.kakao.com/8580028#review" target="_blank"
-            >리뷰 보기</a
-          >
-        </div>
-        <p class="address">서울 노원구 동일로192길 6</p>
-        <p class="old-address">(지번) 공릉동 395-1</p>
-        <div class="operation-and-contact">
-          <span class="hours">영업시간: 매일 00:00 ~ 24:00</span>
-        </div>
-        <span class="phone-number">02-978-0055</span>
-      </div>
-    </div>
-    <div class="restaurant-container">
-      <img
-        src="../images/korean_images/오름제주고기 본점.png"
-        alt="Food Image"
-        class="food-image"
-      />
-      <div class="restaurant-info">
-        <a href="https://place.map.kakao.com/903435269?openhour=1"
-          ><h2>오름제주고기 본점</h2></a
-        >
-        <p>육류,고기</p>
-        <div class="rating-and-reviews">
-          <span class="rating">2.2 ★★☆☆☆</span>
-          <a href="https://place.map.kakao.com/903435269#review" target="_blank"
-            >리뷰 보기</a
-          >
-        </div>
-        <p class="address">서울 노원구 동일로192길 85 1층</p>
-        <p class="old-address">(지번) 공릉동 441-136</p>
-        <div class="operation-and-contact">
-          <span class="hours">영업시간: 매일 12:00 ~ 23:00</span>
-        </div>
-        <span class="phone-number">02-973-9290</span>
-      </div>
-    </div>
-    <div class="restaurant-container">
-      <img
-        src="../images/korean_images/국민소곱창 공릉점.png"
-        alt="Food Image"
-        class="food-image"
-      />
-      <div class="restaurant-info">
-        <a href="https://place.map.kakao.com/2140415713?openhour=1"
-          ><h2>국민소곱창 공릉점</h2></a
-        >
-        <p>곱창,막창</p>
-        <div class="rating-and-reviews">
-          <span class="rating">4.4 ★★★★☆</span>
-          <a
-            href="https://place.map.kakao.com/2140415713#review"
-            target="_blank"
-            >리뷰 보기</a
-          >
-        </div>
-        <p class="address">서울 노원구 동일로192길 88 오성빌딩 1층</p>
-        <p class="old-address">(지번) 공릉동 441-26</p>
-        <div class="operation-and-contact">
-          <span class="hours">영업시간: 영업시간 월,화 17:30 ~ 23:00</span>
-        </div>
-        <span class="phone-number">02-975-9923</span>
-      </div>
-    </div>
-    <div class="restaurant-container">
-      <img
-        src="../images/korean_images/굴다리 전주콩나물국밥 본점.png"
-        alt="Food Image"
-        class="food-image"
-      />
-      <div class="restaurant-info">
-        <a href="https://place.map.kakao.com/17209056?openhour=1"
-          ><h2>굴다리 전주콩나물국밥 본점</h2></a
-        >
-        <p>국밥</p>
-        <div class="rating-and-reviews">
-          <span class="rating">4.2 ★★★★☆</span>
-          <a href="https://place.map.kakao.com/17209056#review" target="_blank"
-            >리뷰 보기</a
-          >
-        </div>
-        <p class="address">서울 노원구 동일로198길 32 1층</p>
-        <p class="old-address">(지번) 공릉동 366-1</p>
-        <div class="operation-and-contact">
-          <span class="hours">영업시간: 매일 09:00 ~ 22:00</span>
-        </div>
-        <span class="phone-number">02-978-7202</span>
-      </div>
-    </div>
-    <div class="restaurant-container">
-      <img
-        src="../images/korean_images/공릉회수산.png"
-        alt="Food Image"
-        class="food-image"
-      />
-      <div class="restaurant-info">
-        <a href="https://place.map.kakao.com/16906339?openhour=1"
-          ><h2>공릉회수산</h2></a
-        >
-        <p>회</p>
-        <div class="rating-and-reviews">
-          <span class="rating">3.6 ★★★★☆</span>
-          <a href="https://place.map.kakao.com/16906339#review" target="_blank"
-            >리뷰 보기</a
-          >
-        </div>
-        <p class="address">서울 노원구 공릉로 179 2층</p>
-        <p class="old-address">(지번) 공릉동 408-8</p>
-        <div class="operation-and-contact">
-          <span class="hours">영업시간: 매일 12:00 ~ 24:00</span>
-        </div>
-        <span class="phone-number">02-971-4383</span>
-      </div>
-    </div>
-    <div class="restaurant-container">
-      <img
-        src="../images/korean_images/춘천닭갈비 서울과기대점.png"
-        alt="Food Image"
-        class="food-image"
-      />
-      <div class="restaurant-info">
-        <a href="https://place.map.kakao.com/16936111?openhour=1"
-          ><h2>춘천닭갈비 서울과기대점</h2></a
-        >
-        <p>닭요리</p>
-        <div class="rating-and-reviews">
-          <span class="rating">4.8 ★★★★★</span>
-          <a href="https://place.map.kakao.com/16936111#review" target="_blank"
-            >리뷰 보기</a
-          >
-        </div>
-        <p class="address">서울 노원구 동일로192길 56</p>
-        <p class="old-address">(지번) 공릉동 392-27</p>
-        <div class="operation-and-contact">
-          <span class="hours">영업시간: 매일 11:30 ~ 23:00</span>
-        </div>
-        <span class="phone-number">02-975-2345</span>
-      </div>
-    </div>
-    <div class="restaurant-container">
-      <img
-        src="../images/korean_images/백세마인보쌈 공릉본점.png"
-        alt="Food Image"
-        class="food-image"
-      />
-      <div class="restaurant-info">
-        <a href="https://place.map.kakao.com/1315949532?openhour=1"
-          ><h2>백세마인보쌈 공릉본점</h2></a
-        >
-        <p>족발,보쌈</p>
-        <div class="rating-and-reviews">
-          <span class="rating">4.2 ★★★★☆</span>
-          <a
-            href="https://place.map.kakao.com/1315949532#review"
-            target="_blank"
-            >리뷰 보기</a
-          >
-        </div>
-        <p class="address">서울 노원구 공릉로 187</p>
-        <p class="old-address">(지번) 공릉동 408-4</p>
-        <div class="operation-and-contact">
-          <span class="hours">영업시간: 매일 11:30 ~ 22:00</span>
-        </div>
-        <span class="phone-number">02-972-1656</span>
-      </div>
-    </div>
-    <div class="restaurant-container">
-      <img
-        src="../images/korean_images/무봉리토종순대국 공릉점.png"
-        alt="Food Image"
-        class="food-image"
-      />
-      <div class="restaurant-info">
-        <a href="https://place.map.kakao.com/1741509421?openhour=1"
-          ><h2>무봉리토종순대국 공릉점</h2></a
-        >
-        <p>순대</p>
-        <div class="rating-and-reviews">
-          <span class="rating">3.3 ★★★☆☆</span>
-          <a
-            href="https://place.map.kakao.com/1741509421#review"
-            target="_blank"
-            >리뷰 보기</a
-          >
-        </div>
-        <p class="address">서울 노원구 동일로192길 63 1층</p>
-        <p class="old-address">(지번) 공릉동 389-9</p>
-        <div class="operation-and-contact">
-          <span class="hours">영업시간: 매일 00:00 ~ 24:00</span>
-        </div>
-        <span class="phone-number">02-977-7396</span>
-      </div>
-    </div>
-    <div class="restaurant-container">
-      <img
-        src="../images/korean_images/이정림수제햄부대찌개.png"
-        alt="Food Image"
-        class="food-image"
-      />
-      <div class="restaurant-info">
-        <a href="https://place.map.kakao.com/381875424?openhour=1"
-          ><h2>이정림수제햄부대찌개</h2></a
-        >
-        <p>찌개,전골</p>
-        <div class="rating-and-reviews">
-          <span class="rating">4.5 ★★★★★</span>
-          <a href="https://place.map.kakao.com/381875424#review" target="_blank"
-            >리뷰 보기</a
-          >
-        </div>
-        <p class="address">서울 노원구 공릉로 207 세림빌딩 2층 202호</p>
-        <p class="old-address">(지번) 공릉동 441</p>
-        <div class="operation-and-contact">
-          <span class="hours"
-            >영업시간: 매일 11:00 ~ 22:00 · 휴게시간 매일 15:00 ~ 16:00</span
-          >
-        </div>
-        <span class="phone-number">0507-1339-3804</span>
-      </div>
-    </div>
-    <div class="restaurant-container">
-      <img
-        src="../images/korean_images/향토곱창.png"
-        alt="Food Image"
-        class="food-image"
-      />
-      <div class="restaurant-info">
-        <a href="https://place.map.kakao.com/16819810?openhour=1"
-          ><h2>향토곱창</h2></a
-        >
-        <p>곱창,막창</p>
-        <div class="rating-and-reviews">
-          <span class="rating">2.9 ★★★☆☆</span>
-          <a href="https://place.map.kakao.com/16819810#review" target="_blank"
-            >리뷰 보기</a
-          >
-        </div>
-        <p class="address">서울 노원구 동일로191길 10</p>
-        <p class="old-address">(지번) 공릉동 383-18</p>
-        <div class="operation-and-contact">
-          <span class="hours">영업시간: 매일 11:00 ~ 24:00</span>
-        </div>
-        <span class="phone-number">02-972-3492</span>
-      </div>
-    </div>
-    <div class="restaurant-container">
-      <img
-        src="../images/korean_images/청교옥.png"
-        alt="Food Image"
-        class="food-image"
-      />
-      <div class="restaurant-info">
-        <a href="https://place.map.kakao.com/88388237?openhour=1"
-          ><h2>청교옥</h2></a
-        >
-        <p>냉면</p>
-        <div class="rating-and-reviews">
-          <span class="rating">3.8 ★★★★☆</span>
-          <a href="https://place.map.kakao.com/88388237#review" target="_blank"
-            >리뷰 보기</a
-          >
-        </div>
-        <p class="address">서울 노원구 공릉로 225 나동 1층</p>
-        <p class="old-address">(지번) 공릉동 438-2</p>
-        <div class="operation-and-contact">
-          <span class="hours">영업시간: 매일 09:30 ~ 21:30</span>
-        </div>
-        <span class="phone-number">02-949-1519</span>
-      </div>
-    </div>
-    <div class="restaurant-container">
-      <img
-        src="../images/korean_images/원조강영숙봉평메밀촌 본점.png"
-        alt="Food Image"
-        class="food-image"
-      />
-      <div class="restaurant-info">
-        <a href="https://place.map.kakao.com/17223169?openhour=1"
-          ><h2>원조강영숙봉평메밀촌 본점</h2></a
-        >
-        <p>국수</p>
-        <div class="rating-and-reviews">
-          <span class="rating">4.3 ★★★★☆</span>
-          <a href="https://place.map.kakao.com/17223169#review" target="_blank"
-            >리뷰 보기</a
-          >
-        </div>
-        <p class="address">서울 노원구 공릉로 191-6 1층</p>
-        <p class="old-address">(지번) 공릉동 441-40</p>
-        <div class="operation-and-contact">
-          <span class="hours">영업시간: 매일 10:30 ~ 21:30</span>
-        </div>
-        <span class="phone-number">02-971-6953</span>
-      </div>
-    </div>
-    <div class="restaurant-container">
-      <img
-        src="../images/korean_images/전봇대연탄불막창구이.png"
-        alt="Food Image"
-        class="food-image"
-      />
-      <div class="restaurant-info">
-        <a href="https://place.map.kakao.com/23106158?openhour=1"
-          ><h2>전봇대연탄불막창구이</h2></a
-        >
-        <p>곱창,막창</p>
-        <div class="rating-and-reviews">
-          <span class="rating">3.4 ★★★☆☆</span>
-          <a href="https://place.map.kakao.com/23106158#review" target="_blank"
-            >리뷰 보기</a
-          >
-        </div>
-        <p class="address">서울 노원구 동일로192길 45 1층</p>
-        <p class="old-address">(지번) 공릉1동 388-6</p>
-        <div class="operation-and-contact">
-          <span class="hours">영업시간: 영업시간 매일 16:30 ~ 01:00</span>
-        </div>
-        <span class="phone-number">02-949-7677</span>
-      </div>
-    </div>
-    <div class="restaurant-container">
-      <img
-        src="../images/korean_images/찬이네곱창.png"
-        alt="Food Image"
-        class="food-image"
-      />
-      <div class="restaurant-info">
-        <a href="https://place.map.kakao.com/1064474316?openhour=1"
-          ><h2>찬이네곱창</h2></a
-        >
-        <p>곱창,막창</p>
-        <div class="rating-and-reviews">
-          <span class="rating">5.0 ★★★★★</span>
-          <a
-            href="https://place.map.kakao.com/1064474316#review"
-            target="_blank"
-            >리뷰 보기</a
-          >
-        </div>
-        <p class="address">서울 노원구 공릉로51길 7</p>
-        <p class="old-address">(지번) 공릉동 440-11</p>
-        <div class="operation-and-contact">
-          <span class="hours">영업시간: 영업시간 월~토 18:00 ~ 23:00</span>
-        </div>
-        <span class="phone-number">02-974-3121</span>
-      </div>
-    </div>
-    <div class="restaurant-container">
-      <img
-        src="../images/korean_images/수돈재 공릉점.png"
-        alt="Food Image"
-        class="food-image"
-      />
-      <div class="restaurant-info">
-        <a href="https://place.map.kakao.com/1472202260?openhour=1"
-          ><h2>수돈재 공릉점</h2></a
-        >
-        <p>육류,고기</p>
-        <div class="rating-and-reviews">
-          <span class="rating">3.3 ★★★☆☆</span>
-          <a
-            href="https://place.map.kakao.com/1472202260#review"
-            target="_blank"
-            >리뷰 보기</a
-          >
-        </div>
-        <p class="address">서울 노원구 동일로192길 5 1층</p>
-        <p class="old-address">(지번) 공릉동 386-6</p>
-        <div class="operation-and-contact">
-          <span class="hours">영업시간: 매일 10:30 ~ 22:00</span>
-        </div>
-        <span class="phone-number">02-977-2016</span>
-      </div>
-    </div>
-    <div class="restaurant-container">
-      <img
-        src="../images/korean_images/오늘손칼국수앤찜 공릉점.png"
-        alt="Food Image"
-        class="food-image"
-      />
-      <div class="restaurant-info">
-        <a href="https://place.map.kakao.com/26418668?openhour=1"
-          ><h2>오늘손칼국수앤찜 공릉점</h2></a
-        >
-        <p>해물,생선</p>
-        <div class="rating-and-reviews">
-          <span class="rating">3.9 ★★★★☆</span>
-          <a href="https://place.map.kakao.com/26418668#review" target="_blank"
-            >리뷰 보기</a
-          >
-        </div>
-        <p class="address">서울 노원구 동일로192길 5 2층</p>
-        <p class="old-address">(지번) 공릉동 386-6</p>
-        <div class="operation-and-contact">
-          <span class="hours">영업시간: 매일 10:00 ~ 22:00</span>
-        </div>
-        <span class="phone-number">02-973-9252</span>
-      </div>
-    </div>
-    <div class="restaurant-container">
-      <img
-        src="../images/korean_images/삼정종합어시장.png"
-        alt="Food Image"
-        class="food-image"
-      />
-      <div class="restaurant-info">
-        <a href="https://place.map.kakao.com/201802381?openhour=1"
-          ><h2>삼정종합어시장</h2></a
-        >
-        <p>회</p>
-        <div class="rating-and-reviews">
-          <span class="rating">4.3 ★★★★☆</span>
-          <a href="https://place.map.kakao.com/201802381#review" target="_blank"
-            >리뷰 보기</a
-          >
-        </div>
-        <p class="address">서울 노원구 동일로192길 47 2층</p>
-        <p class="old-address">(지번) 공릉동 389-7</p>
-        <div class="operation-and-contact">
-          <span class="hours">영업시간: 매일 11:30 ~ 24:00</span>
-        </div>
-        <span class="phone-number">02-978-8945</span>
-      </div>
-    </div>
-    <div class="restaurant-container">
-      <img
-        src="../images/korean_images/강나루유황오리주물럭 제1본점.png"
-        alt="Food Image"
-        class="food-image"
-      />
-      <div class="restaurant-info">
-        <a href="https://place.map.kakao.com/16061965?openhour=1"
-          ><h2>강나루유황오리주물럭 제1본점</h2></a
-        >
-        <p>오리</p>
-        <div class="rating-and-reviews">
-          <span class="rating">2.3 ★★☆☆☆</span>
-          <a href="https://place.map.kakao.com/16061965#review" target="_blank"
-            >리뷰 보기</a
-          >
-        </div>
-        <p class="address">서울 노원구 공릉로43길 11</p>
-        <p class="old-address">(지번) 공릉동 408-138</p>
-        <div class="operation-and-contact">
-          <span class="hours">영업시간: 매일 11:00 ~ 22:00</span>
-        </div>
-        <span class="phone-number">02-972-5454</span>
-      </div>
-    </div>
-    <div class="restaurant-container">
-      <img
-        src="../images/korean_images/김가네찜칼국수.png"
-        alt="Food Image"
-        class="food-image"
-      />
-      <div class="restaurant-info">
-        <a href="https://place.map.kakao.com/536237723?openhour=1"
-          ><h2>김가네찜칼국수</h2></a
-        >
-        <p>한식</p>
-        <div class="rating-and-reviews">
-          <span class="rating">4.7 ★★★★★</span>
-          <a href="https://place.map.kakao.com/536237723#review" target="_blank"
-            >리뷰 보기</a
-          >
-        </div>
-        <p class="address">서울 노원구 공릉로 181 1층</p>
-        <p class="old-address">(지번) 공릉동 408-6</p>
-        <div class="operation-and-contact">
-          <span class="hours">영업시간: 매일 10:00 ~ 22:00</span>
-        </div>
-        <span class="phone-number">02-978-8880</span>
-      </div>
-    </div>
-    <div class="restaurant-container">
-      <img
-        src="../images/korean_images/추운돼지삼겹살 공릉점.png"
-        alt="Food Image"
-        class="food-image"
-      />
-      <div class="restaurant-info">
-        <a href="https://place.map.kakao.com/1563510748?openhour=1"
-          ><h2>추운돼지삼겹살 공릉점</h2></a
-        >
-        <p>삼겹살</p>
-        <div class="rating-and-reviews">
-          <span class="rating">3.5 ★★★★☆</span>
-          <a
-            href="https://place.map.kakao.com/1563510748#review"
-            target="_blank"
-            >리뷰 보기</a
-          >
-        </div>
-        <p class="address">서울 노원구 동일로186길 77-21</p>
-        <p class="old-address">(지번) 공릉동 504-20</p>
-        <div class="operation-and-contact">
-          <span class="hours">영업시간: 영업시간 매일 16:00 ~ 23:00</span>
-        </div>
-        <span class="phone-number">02-948-9111</span>
-      </div>
-    </div>
-    <div class="restaurant-container">
-      <img
-        src="../images/korean_images/명문대.png"
-        alt="Food Image"
-        class="food-image"
-      />
-      <div class="restaurant-info">
-        <a href="https://place.map.kakao.com/724570590?openhour=1"
-          ><h2>명문대</h2></a
-        >
-        <p>해물,생선</p>
-        <div class="rating-and-reviews">
-          <span class="rating">4.3 ★★★★☆</span>
-          <a href="https://place.map.kakao.com/724570590#review" target="_blank"
-            >리뷰 보기</a
-          >
-        </div>
-        <p class="address">서울 노원구 동일로192다길 7</p>
-        <p class="old-address">(지번) 공릉동 389-11</p>
-        <div class="operation-and-contact">
-          <span class="hours">영업시간: 월요일</span>
-        </div>
-        <span class="phone-number">02-949-2203</span>
-      </div>
-    </div>
-    <div class="restaurant-container">
-      <img
-        src="../images/korean_images/압구정찌개마을 공릉본점.png"
-        alt="Food Image"
-        class="food-image"
-      />
-      <div class="restaurant-info">
-        <a href="https://place.map.kakao.com/20748457?openhour=1"
-          ><h2>압구정찌개마을 공릉본점</h2></a
-        >
-        <p>찌개,전골</p>
-        <div class="rating-and-reviews">
-          <span class="rating">3.2 ★★★☆☆</span>
-          <a href="https://place.map.kakao.com/20748457#review" target="_blank"
-            >리뷰 보기</a
-          >
-        </div>
-        <p class="address">서울 노원구 동일로191길 8</p>
-        <p class="old-address">(지번) 공릉동 383-17</p>
-        <div class="operation-and-contact">
-          <span class="hours">영업시간: 매일 00:00 ~ 24:00</span>
-        </div>
-        <span class="phone-number">02-493-0097</span>
-      </div>
-    </div>
-    <div class="restaurant-container">
-      <img
-        src="../images/korean_images/열화철판.png"
-        alt="Food Image"
-        class="food-image"
-      />
-      <div class="restaurant-info">
-        <a href="https://place.map.kakao.com/174772884?openhour=1"
-          ><h2>열화철판</h2></a
-        >
-        <p>곱창,막창</p>
-        <div class="rating-and-reviews">
-          <span class="rating">3.0 ★★★☆☆</span>
-          <a href="https://place.map.kakao.com/174772884#review" target="_blank"
-            >리뷰 보기</a
-          >
-        </div>
-        <p class="address">서울 노원구 동일로192길 90 2층</p>
-        <p class="old-address">(지번) 공릉동 441-25</p>
-        <div class="operation-and-contact">
-          <span class="hours"
-            >영업시간: 매일 11:00 ~ 24:00 · 휴게시간 매일 15:00 ~ 17:00</span
-          >
-        </div>
-        <span class="phone-number">02-6013-5892</span>
-      </div>
-    </div>
-    <div class="restaurant-container">
-      <img
-        src="../images/korean_images/참맛감자탕.png"
-        alt="Food Image"
-        class="food-image"
-      />
-      <div class="restaurant-info">
-        <a href="https://place.map.kakao.com/773352732?openhour=1"
-          ><h2>참맛감자탕</h2></a
-        >
-        <p>감자탕</p>
-        <div class="rating-and-reviews">
-          <span class="rating">3.9 ★★★★☆</span>
-          <a href="https://place.map.kakao.com/773352732#review" target="_blank"
-            >리뷰 보기</a
-          >
-        </div>
-        <p class="address">서울 노원구 동일로192길 41 1층</p>
-        <p class="old-address">(지번) 공릉동 388-5</p>
-        <div class="operation-and-contact">
-          <span class="hours">영업시간: 매일 00:00 ~ 24:00</span>
-        </div>
-        <span class="phone-number">02-974-5533</span>
-      </div>
-    </div>
-    <div class="restaurant-container">
-      <img
-        src="../images/korean_images/웰빙왕십리곱창.png"
-        alt="Food Image"
-        class="food-image"
-      />
-      <div class="restaurant-info">
-        <a href="https://place.map.kakao.com/21331942?openhour=1"
-          ><h2>웰빙왕십리곱창</h2></a
-        >
-        <p>곱창,막창</p>
-        <div class="rating-and-reviews">
-          <span class="rating">3.4 ★★★☆☆</span>
-          <a href="https://place.map.kakao.com/21331942#review" target="_blank"
-            >리뷰 보기</a
-          >
-        </div>
-        <p class="address">서울 노원구 공릉로 208 1층</p>
-        <p class="old-address">(지번) 공릉동 208-18</p>
-        <div class="operation-and-contact">
-          <span class="hours">영업시간: 매일 14:00 ~ 05:00</span>
-        </div>
-      </div>
-    </div>
-    <div class="restaurant-container">
-      <img
-        src="../images/korean_images/싱싱오징어바다 과기대점.png"
-        alt="Food Image"
-        class="food-image"
-      />
-      <div class="restaurant-info">
-        <a href="https://place.map.kakao.com/16330146?openhour=1"
-          ><h2>싱싱오징어바다 과기대점</h2></a
-        >
-        <p>회</p>
-        <div class="rating-and-reviews">
-          <span class="rating">2.9 ★★★☆☆</span>
-          <a href="https://place.map.kakao.com/16330146#review" target="_blank"
-            >리뷰 보기</a
-          >
-        </div>
-        <p class="address">서울 노원구 동일로192길 30 1층</p>
-        <p class="old-address">(지번) 공릉동 393-5</p>
-        <div class="operation-and-contact">
-          <span class="hours">영업시간: 영업시간 월~금 16:00 ~ 05:00</span>
-        </div>
-        <span class="phone-number">02-976-8081</span>
-      </div>
-    </div>
-    <div class="restaurant-container">
-      <img
-        src="../images/korean_images/온고을 본점.png"
-        alt="Food Image"
-        class="food-image"
-      />
-      <div class="restaurant-info">
-        <a href="https://place.map.kakao.com/16472635?openhour=1"
-          ><h2>온고을 본점</h2></a
-        >
-        <p>닭요리</p>
-        <div class="rating-and-reviews">
-          <span class="rating">3.0 ★★★☆☆</span>
-          <a href="https://place.map.kakao.com/16472635#review" target="_blank"
-            >리뷰 보기</a
-          >
-        </div>
-        <p class="address">서울 노원구 동일로 1065</p>
-        <p class="old-address">(지번) 공릉동 398-5</p>
-        <div class="operation-and-contact">
-          <span class="hours">영업시간: 매일 10:00 ~ 22:00</span>
-        </div>
-        <span class="phone-number">02-975-8200</span>
-      </div>
-    </div>
-    <hr>
-    <div class="footer">
-      <a href="http://facebook.com">
-          <img src="../images/homepage_img/facebook.png"height="20">
-          </a>
-      <a href="http://instagram.com">
-          <img src="../images/homepage_img/instagram.png"height="20">
-          </a>
-      <a href="http://twitter.com">
-          <img src="../images/homepage_img/twitter.png"height="20">
-          </a>
-      <a href="http://naver.com">
-          <img src="../images/homepage_img/naver.png"height="20">
-          </a>
-      <a href="http://kakao.com">
-          <img src="../images/homepage_img/kakao.png"height="20">
-          </a>
-    </a>
-  </div>
-
-  </body>
+    </body>
 </html>
+

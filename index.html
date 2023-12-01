@@ -1,152 +1,126 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>동네식당 맛집 추천</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="style/style.css" />
-    <link rel="icon" type="images/png" href="images/homepage_img/icon.png">
-    <script src="js/index.js"></script>
-    <script src="js/random.js"></script>
-  </head>
+    <head>
+        <title>동네식당 맛집 추천</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style/style.css" />
+        <link rel="icon" type="images/png" href="images/homepage_img/icon.png" />
+        <script src="js/index.js"></script>
+        <script src="js/random.js"></script>
+    </head>
 
-  <body>
-    <div class="navbar">
-      <a href="index.html" id="logo">
-        <img src="images/homepage_img/mini_title.png" width="65">
-        </a>
-        <ul id="menu">
-          <li><a href="pages/contact.html">contact</a></li>
-          <li><a href="#" onclick="openRandomKakaoMapLink()">정해줘!</a></li>
-          <li><a href="pages/login.html">login</a></li>
-        </ul>
-    </div>
-    <hr>
-    <div class="hero-header"></div>
-    <nav class="menu">
-      <ul class="menu_name">
-        <a href="pages/korean.html"><li>한식</li></a>
-        <a href="pages/chinese.html"><li>중식</li></a>
-        <a href="pages/western.html"><li>양식</li></a>
-        <a href="pages/japanese.html"><li>일식</li></a>
-        <a href="pages/snack.html"><li>분식</li></a>
-        <a href="pages/beer.html"><li>술집</li></a>
-      </ul>
-    </nav>
-    <div class="foods">
-      <h3>오늘은 여기 어때요?</h3>
-      <div class="food-list">
-        <a href="https://place.map.kakao.com/21412672?openhour=1" class="food">
-          <img
-          src="images/korean_images/원조이모네연탄불곱창.png"
-          alt="Food Image"
-          class="food-image"
-          />
-          <div class="food-name">
-            <strong>원조이모네연탄불곱창</strong>
-          </div>
-          <div class="food-tag">곱창,막창</div>
-          <span class="rating">2.6 ★★★☆☆</span>
-        </a>
-        
-        <a href="https://place.map.kakao.com/8136049?openhour=1" class="food">
-          <img
-          src="images/western_images/피자스쿨 공릉점.png"
-          alt="Food Image"
-          class="food-image"
-          />
-          <div class="food-name">
-            <strong>피자스쿨 공릉점</strong>
-          </div>
-          <div class="food-tag">피자</div>
-          <span class="rating">3.4 ★★★☆☆</span>
-        </a>
-        
-        <a href="https://place.map.kakao.com/1422521863?openhour=1" class="food">
-          <img
-          src="images/japanese_images/네코정.png"
-          alt="Food Image"
-          class="food-image"
-          />
-          <div class="food-name">
-            <strong>네코정</strong>
-          </div>
-          <div class="food-tag">일식</div>
-          <span class="rating">3.9 ★★★★☆</span>
-        </a>
-        
-        <a href="https://place.map.kakao.com/79841784?openhour=1" class="food">
-          <img
-          src="images/chinese_images/신미방마라탕 공릉점.png"
-          alt="Food Image"
-          class="food-image"
-          />
-          <div class="food-name">
-            <strong>신미방마라탕 공릉점</strong>
-          </div>
-          <div class="food-tag">중국요리</div>
-          <span class="rating">4.4 ★★★★☆</span>
-        </a>
-        
-        <a href="https://place.map.kakao.com/16703995?openhour=1" class="food">
-          <img
-          src="images/snack_images/쪼매매운떡볶이 공릉점.png"
-          alt="Food Image"
-          class="food-image"
-          />
-          <div class="food-name">
-            <strong>쪼매매운떡볶이 공릉점</strong>
-          </div>
-          <div class="food-tag">떡볶이</div>
-          <span class="rating">4.5 ★★★★★</span>
-        </a>
-        
-        <a href="https://place.map.kakao.com/16329163?openhour=1" class="food">
-          <img
-          src="images/beer_images/동학.png"
-          alt="Food Image"
-          class="food-image"
-          />
-          <div class="food-name">
-            <strong>동학</strong>
-          </div>
-          <div class="food-tag">호프,요리주점</div>
-          <span class="rating">4.2 ★★★★☆</span>
-        </a>
-        
-        
-        <div class="clearfix"></div>
+    <body>
+        <div class="navbar">
+            <a href="index.html" id="logo">
+                <img src="images/homepage_img/mini_title.png" width="65" />
+            </a>
+            <ul id="menu">
+                <li><a href="pages/contact.html">contact</a></li>
+                <li><a href="#" onclick="openRandomKakaoMapLink()">정해줘!</a></li>
+                <li><a href="pages/login.html">login</a></li>
+            </ul>
+        </div>
+        <hr />
+        <div class="hero-header"></div>
+        <nav class="menu">
+            <ul class="menu_name">
+                <a href="pages/korean.html"><li>한식</li></a>
+                <a href="pages/chinese.html"><li>중식</li></a>
+                <a href="pages/western.html"><li>양식</li></a>
+                <a href="pages/japanese.html"><li>일식</li></a>
+                <a href="pages/snack.html"><li>분식</li></a>
+                <a href="pages/beer.html"><li>술집</li></a>
+            </ul>
+        </nav>
+        <div class="foods">
+            <h3>오늘은 여기 어때요?</h3>
+            <div class="food-list">
+                <a href="https://place.map.kakao.com/21412672?openhour=1" class="food">
+                    <img src="images/korean_images/원조이모네연탄불곱창.png" alt="Food Image" class="food-image" />
+                    <div class="food-name">
+                        <strong>원조이모네연탄불곱창</strong>
+                    </div>
+                    <div class="food-tag">곱창,막창</div>
+                    <span class="rating">2.6 ★★★☆☆</span>
+                </a>
 
-        <h3>이런 곳도 있어요!</h3>
-      </div>
-      <div class="youtube">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/PInAYpL5SlE?si=IxiEaVfs7dG740or" frameborder="0"></iframe>
-      </div>
-      <br><br><br><br>
-      <div class="search">
-        <input type="text" placeholder="맛집 검색...">
-        <button>검색</button>
-      </div>
-    </div>
-    <br><br><br><br>
-    <hr>
-    
-    <div class="footer">
-        <a href="http://facebook.com">
-            <img src="images/homepage_img/facebook.png"height="20">
+                <a href="https://place.map.kakao.com/8136049?openhour=1" class="food">
+                    <img src="images/western_images/피자스쿨 공릉점.png" alt="Food Image" class="food-image" />
+                    <div class="food-name">
+                        <strong>피자스쿨 공릉점</strong>
+                    </div>
+                    <div class="food-tag">피자</div>
+                    <span class="rating">3.4 ★★★☆☆</span>
+                </a>
+
+                <a href="https://place.map.kakao.com/1422521863?openhour=1" class="food">
+                    <img src="images/japanese_images/네코정.png" alt="Food Image" class="food-image" />
+                    <div class="food-name">
+                        <strong>네코정</strong>
+                    </div>
+                    <div class="food-tag">일식</div>
+                    <span class="rating">3.9 ★★★★☆</span>
+                </a>
+
+                <a href="https://place.map.kakao.com/79841784?openhour=1" class="food">
+                    <img src="images/chinese_images/신미방마라탕 공릉점.png" alt="Food Image" class="food-image" />
+                    <div class="food-name">
+                        <strong>신미방마라탕 공릉점</strong>
+                    </div>
+                    <div class="food-tag">중국요리</div>
+                    <span class="rating">4.4 ★★★★☆</span>
+                </a>
+
+                <a href="https://place.map.kakao.com/16703995?openhour=1" class="food">
+                    <img src="images/snack_images/쪼매매운떡볶이 공릉점.png" alt="Food Image" class="food-image" />
+                    <div class="food-name">
+                        <strong>쪼매매운떡볶이 공릉점</strong>
+                    </div>
+                    <div class="food-tag">떡볶이</div>
+                    <span class="rating">4.5 ★★★★★</span>
+                </a>
+
+                <a href="https://place.map.kakao.com/16329163?openhour=1" class="food">
+                    <img src="images/beer_images/동학.png" alt="Food Image" class="food-image" />
+                    <div class="food-name">
+                        <strong>동학</strong>
+                    </div>
+                    <div class="food-tag">호프,요리주점</div>
+                    <span class="rating">4.2 ★★★★☆</span>
+                </a>
+
+                <div class="clearfix"></div>
+
+                <h3>이런 곳도 있어요!</h3>
+            </div>
+            <div class="youtube">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PInAYpL5SlE?si=IxiEaVfs7dG740or" frameborder="0"></iframe>
+            </div>
+            <br /><br /><br /><br />
+            <div class="search">
+                <input type="text" placeholder="맛집 검색..." />
+                <button>검색</button>
+            </div>
+        </div>
+        <br /><br /><br /><br />
+        <hr />
+
+        <div class="footer">
+            <a href="http://facebook.com">
+                <img src="images/homepage_img/facebook.png" height="20" />
             </a>
-        <a href="http://instagram.com">
-            <img src="images/homepage_img/instagram.png"height="20">
+            <a href="http://instagram.com">
+                <img src="images/homepage_img/instagram.png" height="20" />
             </a>
-        <a href="http://twitter.com">
-            <img src="images/homepage_img/twitter.png"height="20">
+            <a href="http://twitter.com">
+                <img src="images/homepage_img/twitter.png" height="20" />
             </a>
-        <a href="http://naver.com">
-            <img src="images/homepage_img/naver.png"height="20">
+            <a href="http://naver.com">
+                <img src="images/homepage_img/naver.png" height="20" />
             </a>
-        <a href="http://kakao.com">
-            <img src="images/homepage_img/kakao.png"height="20">
+            <a href="http://kakao.com">
+                <img src="images/homepage_img/kakao.png" height="20" />
             </a>
-      </a>
-    </div>
-  </body>
+        </div>
+    </body>
 </html>

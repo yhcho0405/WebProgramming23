@@ -1,15 +1,26 @@
+.restaurant-list {
+    display: flex;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .restaurant-container {
     display: flex;
     align-items: flex-start;
+    width: 600px;
     padding: 20px;
 }
 
 .food-image {
-    width: 225px;
+    width: 200px;
     height: 200px;
     margin-right: 20px;
-    border-radius:20%;
-    border:5px solid black;
+    border-radius: 20%;
+    border: 5px solid black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
 }
 
 .restaurant-info {
